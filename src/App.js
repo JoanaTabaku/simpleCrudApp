@@ -32,7 +32,7 @@ function App() {
     });
     setInput('');
   };
-<p>TEST</p>
+
   // Read Todo from firebase
   useEffect(() => {
     const q = query(collection(db, 'todos'));
@@ -78,7 +78,7 @@ function App() {
           <Todo key={index} todo={todo} toggleComplete={toggleComplete} deleteTodo={deleteTodo} />
         ))}
       </ul>
-      {todos.length < 1 ? null : <p className="todo-count">{`You have ${todos.length} todos`}</p>} {/* Add class name */}
+      {todos.length < 1 ? null : <p className="todo-count">{`You have in total ${todos.length} todos`}</p>} {/* Add class name */}
     </div>
   );
 }
