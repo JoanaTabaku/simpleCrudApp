@@ -72,7 +72,6 @@ function App() {
         <button className="add-button" type="submit"> 
           <AiOutlinePlus /> 
         </button>
-        <h1>test</h1>
       </form>
       <ul className="todo-list"> 
         {todos.map((todo, index) => (
