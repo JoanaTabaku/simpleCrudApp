@@ -32,7 +32,7 @@ function App() {
     });
     setInput('');
   };
-
+<p>TEST</p>
   // Read Todo from firebase
   useEffect(() => {
     const q = query(collection(db, 'todos'));
